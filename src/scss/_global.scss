@@ -1,0 +1,79 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body & Locked
+body {
+	  color: $textColor;
+    font-family: $fontMain;
+    &.locked {
+        overflow: hidden;
+    }
+    // Dark mode styles
+    &.dark {
+        background: #242424;
+    }
+}
+
+
+.description {
+	h2 {
+    font-weight: 700;
+    font-size: clamp(1.375rem, 1.089rem + 1.43vw, 2.375rem);
+    line-height: 1.18;
+    margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-weight: 400;
+		font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+		line-height: 1.4;		
+	}
+}
+
+.btn-more {
+	padding: 5px 5px 5px 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: #2DA6DD;
+	background-color: rgba($color: #ffffff, $alpha: 0);
+	text-decoration: underline;
+
+	&:hover {
+		opacity: 80%;
+	}
+
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

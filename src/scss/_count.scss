@@ -1,0 +1,59 @@
+.count {
+	margin-top: 80px;
+}
+
+
+.count__description {
+	max-width: 687px;
+}
+
+.count-list {
+	margin-top: 80px;
+	margin-bottom: 140px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 40px;
+
+	@media screen and (max-width: $burgerBreakpoint) {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 40px;
+	}
+
+	@media screen and (max-width: 420px) {
+		grid-template-columns: 1fr;
+		row-gap: 40px;
+	}
+}
+
+
+.count__item {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.count__number {
+	text-align: center;
+	font-size: clamp(4rem, 3.857rem + 0.71vw, 4.5rem);
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 2%;
+  margin-bottom: 10px;
+}
+
+
+.count__desc {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.4;
+	letter-spacing: 2%;
+	@media screen and (max-width: 420px) {
+    text-align: center;
+	}
+}
+
+.count-4 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,41 @@
+.video-review {
+	padding-top: clamp(5.563rem, 4.652rem + 4.55vw, 8.75rem);
+	padding-bottom: clamp(5.563rem, 4.652rem + 4.55vw, 8.75rem);
+}
+
+.video-review__description {
+	p {
+		max-width: 560px;
+	}
+}
+.video-review__items {
+	margin-top: clamp(3.75rem, 3.268rem + 2.41vw, 5.438rem);
+	display: flex;
+	gap: 40px;
+	
+
+	@media screen and (max-width: 1155px) {
+		flex-direction: column;
+	}
+}
+
+.video-review__player {
+
+	  img {
+				width: clamp(18.75rem, 10.536rem + 41.07vw, 47.5rem);
+	      height: clamp(8.75rem, 3.643rem + 25.54vw, 26.625rem);
+		}
+}
+
+.video-review__description {
+	h3 {
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+	}
+}
+
